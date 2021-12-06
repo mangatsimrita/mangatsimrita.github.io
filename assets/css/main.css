@@ -1,0 +1,711 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Playfair+Display:400,400i,700,700i);
+
+#page-header nav ul li a,
+.btn-grey,
+.page section:first-child header h3 {
+	letter-spacing: 2px;
+	text-transform: uppercase
+}
+
+#page-header,
+.btn-grey,
+main {
+	position: relative;
+	z-index: 1
+}
+
+* {
+	box-sizing: border-box
+}
+
+body,
+html {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	height: 100%;
+	overflow: hidden
+}
+
+h1,h2,h3,h4,h5,h6,p {
+	font-family: "Playfair Display", serif
+}
+
+body {
+	background: #000;
+	flex-direction: row;
+	align-items: flex-start
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 400;
+	margin: 0
+}
+
+p {
+	margin: 0 0 20px
+}
+
+#page-header nav ul li a,
+.btn,
+.page section:first-child header h3 {
+	font-family: "Open Sans", sans-serif
+}
+
+p.intro {
+	font-size: 20px;
+	line-height: 26px
+}
+
+a {
+	text-decoration: none;
+	color: #000
+}
+
+@media screen and (max-width:900px) {
+	p.intro {
+		font-size: 18px;
+		line-height: 24px
+	}
+}
+
+.flex {
+	display: flex
+}
+
+@media screen and (min-width:600px) {
+	.flex-md {
+		display: flex
+	}
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto
+}
+
+.container-full {
+	width: 100%
+}
+
+.noscroll {
+	max-height: 0;
+	overflow: hidden
+}
+
+#page-header {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 10vh 0 0;
+	padding: 0 30px;
+	color: #fff
+}
+
+#page-header h1 {
+	margin: 30px 0 0
+}
+
+#page-header hr {
+	border: none;
+	width: 10%;
+	height: 2px;
+	background: #fff;
+	margin: 50px auto 35px
+}
+
+#page-header nav,
+.page {
+	width: 100%
+}
+
+#page-header h2 {
+	font-size: 16px;
+	line-height: 22px;
+	margin: 20px 0 0
+}
+
+#page-header nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center
+}
+
+#page-header nav ul li a {
+	font-weight: 400;
+	padding: 15px 0;
+	font-size: 16px;
+	display: block;
+	color: #fff;
+	opacity: .65;
+	transition: .5s ease opacity
+}
+
+#page-header nav ul li a.active {
+	opacity: 1
+}
+
+#page-header,
+main {
+	height: 90vh;
+	flex: 1
+}
+
+main {
+	flex-direction: column;
+	align-items: center;
+	background: #fff;
+	overflow: scroll;
+	flex: 1.75;
+	margin: 10vh 10vh 0 0;
+	height: 90vh;
+	justify-content: flex-start
+}
+
+@media screen and (max-width:900px) {
+	main {
+		flex: 3;
+		margin: 5vh 5vh 0 0;
+		height: 95vh
+	}
+}
+
+@media screen and (max-width:600px) {
+	p.intro {
+		font-size: 16px;
+		line-height: 22px
+	}
+	body,
+	html {
+		overflow-y: auto
+	}
+	body {
+		flex-direction: column;
+		display: block
+	}
+	#page-header,
+	main {
+		flex: 1;
+		width: 100%;
+		height: auto
+	}
+}
+
+.page {
+	flex-direction: column;
+	padding: 5% 0;
+	flex-shrink: 0;
+	min-height: 100%
+}
+
+.page section:first-child header {
+	flex-basis: 100%;
+	text-align: center;
+	margin: 0 0 50px;
+	border: none!important
+}
+
+.page section:first-child header h3 {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px
+}
+
+.page section:first-child header h3:after {
+	content: '';
+	width: 20%;
+	height: 2px;
+	background: #000;
+	display: block;
+	margin: 15px 40% 50px
+}
+
+@media screen and (max-width:900px) {
+	.page {
+		padding: 7.5% 0
+	}
+}
+
+.btn {
+	display: block;
+	padding: 15px 20px;
+	cursor: pointer;
+	transition: .5s ease all
+}
+
+.btn-grey {
+	background: #555;
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+	overflow: hidden
+}
+
+.btn-grey:after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	left: -100%;
+	background: #05cdff;
+	z-index: -1;
+	transition: .5s ease-in all
+}
+
+.tile:hover .btn:after,
+.btn-grey:hover:after {
+	left: 0
+}
+
+#page-home {
+	justify-content: center
+}
+
+#connect {
+    margin: 50px;
+    justify-content: center;
+}
+
+#skills  {
+	flex-direction: column;
+	flex: 1 0 auto
+}
+
+#skills header {
+	border-bottom: 2px solid #000;
+	padding: 0 0 5px
+}
+
+#skills:not(:first-child) header h3 {
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 1px
+}
+
+#skills:nth-child(2) ul {
+	margin: 0;
+	flex-wrap: wrap;
+	justify-content: space-between
+}
+
+#skills:nth-child(2) ul li {
+	flex-basis: 50%
+}
+
+#skills:last-child article:last-child {
+	padding-bottom: 0
+}
+
+#skills article {
+	border-bottom: 2px solid #ddd;
+	padding: 30px 15px;
+	flex: 1 0 auto
+}
+
+#skills article:last-child {
+	border: none
+}
+
+#skills article h4 {
+	justify-content: space-between;
+	margin: 0 0 10px;
+	line-height: 22px
+}
+
+#skills article h5 {
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0 0 20px
+}
+
+#skills article ul {
+	margin: 0;
+	padding: 0 0 0 20px;
+	font-size: 14px;
+	line-height: 20px
+}
+
+#skills article ul li {
+	margin: 0 0 5px
+}
+
+#skills article ul li:last-child,
+#skills article>:last-child {
+	margin: 0
+}
+
+@media screen and (max-width:1200px) {
+	#skills:nth-child(2) ul li {
+		flex-basis: 100%
+	}
+	#skills article h4 {
+		flex-direction: column
+	}
+	#skills article h4 span {
+		margin: 5px 0 0
+	}
+	#skills article h4 span:before {
+		content: '('
+	}
+	#skills article h4 span:after {
+		content: ')'
+	}
+}
+
+@media screen and (max-width:600px) {
+	#skills:nth-child(2) ul li {
+		flex-basis: 100%
+	}
+}
+
+#portfolio-grid {
+	flex-wrap: wrap;
+	justify-content: space-between;
+	position: relative
+}
+
+.tile {
+	flex-basis: 48%;
+	height: 0;
+	padding-bottom: 48%;
+	margin: 0 0 4%;
+	position: relative;
+	background: #fff;
+	cursor: pointer
+}
+
+.tile:last-child {
+	margin: 0
+}
+
+@media screen and (min-width:600px) {
+	.tile:nth-last-child(-n+2) {
+		margin: 0
+	}
+}
+
+.tile article:before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 1;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .65) 100%)
+}
+
+.tile article img {
+	width: 100%;
+	height: auto
+}
+
+.tile article p {
+	padding: 10px 15px;
+	margin: 0;
+	position: absolute;
+	bottom: 43px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 22px;
+	z-index: 2
+}
+
+.tile article .btn {
+	position: absolute;
+	text-align: left;
+	bottom: 0;
+	width: 100%
+}
+
+@media screen and (max-width:600px) {
+	.tile {
+		flex-basis: 100%;
+		margin: 0 0 6%;
+		padding-bottom: 100%
+	}
+}
+
+#portfolio-modals {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -9999
+}
+
+#portfolio-modals .modal {
+	width: 90vw;
+	height: 90vh;
+	margin: 5vh 5vw;
+	position: relative;
+	overflow: visible;
+	background: #fff;
+}
+
+#portfolio-modals .gallery[data-slides="1"]~.unslider-arrow {
+	display: none
+}
+
+#portfolio-modals .modal:before {
+	content: '';
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #000
+}
+
+#portfolio-modals .modal .close {
+	display: block;
+	width: 5vw;
+	height: 5vw;
+	position: absolute;
+	top: 0;
+	right: -5vw;
+	background: #fff;
+	color: transparent;
+	cursor: pointer
+}
+
+#portfolio-modals .modal .close:after,
+#portfolio-modals .modal .close:before {
+	content: '';
+	width: 60%;
+	height: 2px;
+	background: #000;
+	position: absolute;
+	top: 50%;
+	left: 20%
+}
+
+#portfolio-modals .modal .close:before {
+	transform: rotate(45deg)
+}
+
+#portfolio-modals .modal .close:after {
+	transform: rotate(-45deg)
+}
+
+#portfolio-modals .modal img {
+	width: 100%;
+	border: 5px solid #fff;
+	margin: 0 0 36px
+}
+
+#portfolio-modals .modal.open {
+	display: block
+}
+
+/* ---- SIMRITA CSS STARTS ----- */
+
+#headshot {
+    width: 300px;
+    height: auto;
+}
+
+.icons {
+    width: 80px;
+    height: auto;
+    margin: 10px;
+}
+
+.bg-change {
+    background-color: papayawhip;
+    padding: 20px;
+}
+/* simrita CSS ENDS */
+
+
+/* ---- NATHALIE CSS STARTS ----- */
+table {
+  border-collapse: collapse;
+  width: 95%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(1) {
+	background-color: #777777;
+	font-family: "Playfair Display", serif;
+	color: #ffffff;
+  font-size: 17px;
+}
+    
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+/* nathalie CSS ENDS */
+
+
+/* ---- TYRA CSS STARTS ----- */
+
+/* tyra CSS ENDS */
+
+
+/* ---- ZAINAB CSS STARTS ----- */
+
+  .column {
+  float: left;
+  width: 32.9%;
+  padding: 1px;
+  margin-left: 2px;
+  margin-right: 1px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#linked {
+  position: absolute;
+  background-color: floralwhite;
+  font-size: 25px;
+  text-align: center;
+  -webkit-text-stroke: unset }
+
+
+table, td, th {
+  border: 1px solid black;}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: brown;
+  color: white;
+  height: 50px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tr:nth-child(odd) {
+  background-color: lightgrey;
+}
+tr:hover { background-color: rosybrown; }
+
+td { text-align: center; 
+  height: 50px;
+  vertical-align: middle; }
+
+
+
+  {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(41, 39, 39);
+        }
+        
+        .forms {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 500px;
+            margin: 15vh auto;
+            padding: 15px;
+            border-radius: 15px;
+            border: none;
+            box-shadow: 0 0 15px rgb(180, 51, 73);
+            /* background-color: gray; */
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+        }
+        
+        input {
+            width: 100%;
+            margin: 5px 0;
+            height: 35px;
+            font-size: 17px;
+            text-align: center;
+            outline: none;
+            border-radius: 15px;
+            border: none;
+            background: rgb(235, 228, 228);
+        }
+        
+        textarea {
+            width: 100%;
+            margin: 5px 0;
+            font-size: 17px;
+            text-align: center;
+            outline: none;
+            border-radius: 15px;
+            border: none;
+            background: rgb(235, 228, 228);
+        }
+        input[type=submit]{
+            margin: 10px auto;
+            width: 120px;
+            background: rgb(216, 31, 62);
+            color: white;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+        background: tomato;
+        }
+        @media screen and (max-width:600px) {
+            .container{
+                width: 90%;
+            }
+        }
+
+        #new {
+        	margin: 10px;
+        	border: solid 1px black;
+        	padding: 10px;
+        }
+
+
+/* zainab CSS ENDS */
